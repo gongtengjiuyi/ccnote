@@ -9,6 +9,7 @@
   width: 70rem;
   margin: 1rem auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .detail .left .topic_header {

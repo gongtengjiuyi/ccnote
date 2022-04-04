@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import Hot from "../../components/hot/hot"
 import "./detail.css";
+
 function Detail() {
   const params = useParams();
   let [content, setcontent] = useState([]);
@@ -34,7 +36,7 @@ function Detail() {
         ></div>
       </div>
       <div className="right">
-        
+        <Hot></Hot>
       </div>
     </div>
   );

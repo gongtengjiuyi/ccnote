@@ -5,6 +5,7 @@ import "./list.css";
 import { Link } from "react-router-dom";
 function Lists(props) {
   let [lists, setlists] = useState([]);
+  let [load, setload] = useState(true);
   useEffect(() => {
     fetch("https://cnodejs.org/api/v1/topics?tab=" + props.tab)
       .then((response) => {
@@ -12,11 +13,21 @@ function Lists(props) {
       })
       .then((res) => {
         setlists((lists = [...res.data]));
+        setload(false);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+  function formatTime(val) {
+    var time = new Date(val)
+    return (time.getFullYear()) +
+      " 年 " +
+      (time.getMonth() + 1) +
+      " 月 " +
+      time.getDate() +
+      " 日 "
+  }
   const IconText = ({ icon, text }) => (
     <Space>
       {React.createElement(icon)}
@@ -25,14 +36,15 @@ function Lists(props) {
   );
   return (
     <List
-    itemLayout="vertical"
+      loading={load}
+      itemLayout="vertical"
       dataSource={lists}
       pagination={{
         pageSize: 10,
       }}
       renderItem={(item) => (
         <List.Item
-          extra={<span>{item.last_reply_at}</span>}
+          extra={<span>{formatTime(item.create_at)}</span>}
           actions={[
             <IconText
               icon={StarOutlined}
@@ -52,11 +64,19 @@ function Lists(props) {
           ]}
         >
           <List.Item.Meta
-            avatar={<Avatar src={item.author.avatar_url} />}
+            avatar={
+              <Link to={"/mine"}>
+                <Avatar src={item.author.avatar_url} />
+              </Link>
+            }
             title={
               <Link to={"/detail/" + item.id}>{item.author.loginname}</Link>
             }
-            description={item.title}
+            description={
+              <Link to={"/detail/" + item.id}>
+                <div>{item.title}</div>
+              </Link>
+            }
           />
         </List.Item>
       )}

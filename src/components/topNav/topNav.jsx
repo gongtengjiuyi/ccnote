@@ -1,16 +1,19 @@
 import "../topNav/topNav.css";
 import logo from "../../assets/img/logo5.png";
 import { Input } from "antd";
+import { Link } from "react-router-dom";
+import Islogin from "../isLogin/islogin";
 function header() {
   const { Search } = Input;
   const onSearch = (value) => console.log(value);
-  const list = ["首页", "新手入门", "API", "关于", "注册", "登录"];
   return (
     <header>
       <div className="container">
         <div className="top_left">
           <div className="logo">
-            <img className="logo" src={logo} alt="" />
+            <Link to={"/"}>
+              <img className="logo" src={logo} alt="" />
+            </Link>
           </div>
           <div className="search">
             <Search
@@ -21,11 +24,11 @@ function header() {
             />
           </div>
         </div>
-        <ul className="right">
-          {list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        <div className="right">
+          <div className="LR">
+           <Islogin/>
+          </div>
+        </div>
       </div>
     </header>
   );
