@@ -47,18 +47,13 @@ function Lists(props) {
           extra={<span>{formatTime(item.create_at)}</span>}
           actions={[
             <IconText
-              icon={StarOutlined}
-              text="156"
-              key="list-vertical-star-o"
-            />,
-            <IconText
               icon={LikeOutlined}
-              text="156"
+              text={item.visit_count}
               key="list-vertical-like-o"
             />,
             <IconText
               icon={MessageOutlined}
-              text="2"
+              text={item.reply_count}
               key="list-vertical-message"
             />,
           ]}

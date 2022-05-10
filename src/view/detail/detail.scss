@@ -6,11 +6,12 @@
        font-size: .75rem;
    }
    .detail{
-       width: 70rem;
+       width: 90%;
        margin: 1rem auto;
        display: flex;
        justify-content: space-between;
        .left{
+           margin-right: 10px;
         .topic_header{
             width: 100%;
             padding: .5rem;

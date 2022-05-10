@@ -5,11 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import 'default-passive-events'
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
 reportWebVitals();

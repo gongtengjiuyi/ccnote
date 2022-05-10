@@ -1,14 +1,8 @@
 import "./App.css";
 import Header from "./components/topNav/topNav";
 import Router from "./router/router";
-import { EditOutlined } from "@ant-design/icons";
-import { Navigate, useNavigate } from "react-router-dom";
 import { BackTop } from 'antd';
 function App() {
-  let Navigator =useNavigate()
-  function toedit(){
-    Navigator('/write')
-  }
   const writeicon = {
     fontSize: "1.5rem",
     color: "#08c",
@@ -26,10 +20,6 @@ function App() {
       <Header></Header>
       <div className="filler"></div>
       <Router />
-      <EditOutlined
-        style={writeicon}
-        onClick={toedit}
-      />
       <BackTop style={{right:'3rem'}} />
     </div>
   );

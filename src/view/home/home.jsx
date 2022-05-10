@@ -2,12 +2,10 @@ import "./home.css";
 import { Tabs } from "antd";
 import List from "../../components/list/list";
 import Hot from "../../components/hot/hot";
-import Swiper from "../../components/swiper/swiper";
 const { TabPane } = Tabs;
 function home() {
   return (
     <div className="home">
-      <Swiper></Swiper>
       <div className="main">
         <div className="left">
           <Tabs defaultActiveKey="1">

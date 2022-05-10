@@ -6,10 +6,14 @@
 }
 
 .detail {
-  width: 70rem;
+  width: 90%;
   margin: 1rem auto;
   display: flex;
   justify-content: space-between;
+}
+
+.detail .left {
+  margin-right: 10px;
 }
 
 .detail .left .topic_header {

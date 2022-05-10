@@ -1,21 +1,33 @@
-.hot {
-  border-radius: .5rem;
-  position: sticky;
-  top: 2.5rem;
-  width: 17.5rem;
-  background: #fff;
-}
-
 .hot .title {
-  padding: 1rem;
+  font-size: 14px;
+  color: #333;
+  line-height: 26px;
+  margin: 0 0 0.5rem;
 }
 
-.hot ul {
-  list-style: none;
+.pannel {
+  border-radius: 0.5rem;
+  top: 2.5rem;
+  width: 13.5rem;
+  background: #fff;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+.header {
+  padding: 10px;
+  font-size: 13px;
+  color: #333;
+  background-color: #f6f6f6;
+}
+
+.pannel-body {
+  padding: 10px;
+}
+
+.pannel-body p {
+  font-size: 14px;
+  color: #778087;
   margin: 0;
-  padding: 0 0 1rem 1rem;
-}
-
-.hot ul li {
-  font-size: .8rem;
+  line-height: 30px;
 }

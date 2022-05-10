@@ -2,7 +2,6 @@ import "../topNav/topNav.css";
 import logo from "../../assets/img/logo5.png";
 import { Input } from "antd";
 import { Link } from "react-router-dom";
-import Islogin from "../isLogin/islogin";
 function header() {
   const { Search } = Input;
   const onSearch = (value) => console.log(value);
@@ -26,7 +25,6 @@ function header() {
         </div>
         <div className="right">
           <div className="LR">
-           <Islogin/>
           </div>
         </div>
       </div>
