@@ -1,26 +1,19 @@
 .content {
-  padding: .5rem;
+  padding: .6rem;
   background-color: #fff;
   margin: 0 auto;
-  font-size: .75rem;
-}
+  font-size: .75rem; }
 
 .detail {
   width: 90%;
   margin: 1rem auto;
   display: flex;
-  justify-content: space-between;
-}
-
+  justify-content: space-between; }
 .detail .left {
-  margin-right: 10px;
-}
-
+  margin-right: 10px; }
 .detail .left .topic_header {
   width: 100%;
-  padding: .5rem;
-}
-
+  padding: .5rem; }
 .detail .left .topic_header .title {
   font-size: 22px;
   font-weight: 700;
@@ -28,14 +21,12 @@
   display: inline-block;
   vertical-align: bottom;
   width: 75%;
-  line-height: 130%;
-}
-
+  line-height: 130%; }
 .detail .left .topic_header .status {
   color: #838383;
-  font-size: .6rem;
-}
+  font-size: .6rem; }
 
 ul, ol {
-  padding-left: 1rem;
-}
+  padding-left: 1rem; }
+
+/*# sourceMappingURL=detail.css.map */
