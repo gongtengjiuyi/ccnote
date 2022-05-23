@@ -24,6 +24,16 @@ function Hot() {
                     <p>next.js打包出错</p>
                 </div>
             </div>
+            <div className='pannel'>
+                <div className="header">
+                    积分榜    TOP 100>>
+                </div>
+                <div className="pannel-body">
+                    <p>next.js打包出错</p>
+                    <p>next.js打包出错</p>
+                    <p>next.js打包出错</p>
+                </div>
+            </div>
         </div>
     )
 }

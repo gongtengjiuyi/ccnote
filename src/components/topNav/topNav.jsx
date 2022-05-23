@@ -1,5 +1,4 @@
 import "../topNav/topNav.css";
-import logo from "../../assets/img/logo5.png";
 import { Input } from "antd";
 import { Link } from "react-router-dom";
 function header() {
@@ -11,7 +10,7 @@ function header() {
         <div className="top_left">
           <div className="logo">
             <Link to={"/"}>
-              <img className="logo" src={logo} alt="" />
+              <p className="logo">CCNODE</p>
             </Link>
           </div>
           <div className="search">
